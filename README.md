@@ -24,7 +24,7 @@ This project was created as an exercise to learn how to handle merge conflicts o
 ## Project Structure
 ```
 /Git-Merge-Conflict-Practice
-│── index.html # Simple HTML file used for testing merges
+│── hello2.html # Simple HTML file used for testing merges
 │── README.md # This README file
 ```
 
@@ -44,7 +44,7 @@ git checkout -b feature-branch
 ```
 
 ### 3. Modify the HTML File
-Open index.html
+Open hello2.html
 Add some text inside the <body> section
 Save the file
 
@@ -58,7 +58,7 @@ git commit -m "Add Descriptive Info on Change Here"
 ```bash
 git checkout main
 ```
-Edit index.html again, but differently than in feature-branch.
+Edit hello2.html again, but differently than in feature-branch.
 Save the file, then commit the changes:
 
 ```bash
@@ -71,7 +71,7 @@ git commit -m "Add Descriptive Info on Change Here"
 git merge feature-branch
 ```
 ### 7. Resolve the Merge Conflict
-When Git detects a merge conflict, it will mark the conflicting code in index.html like this:
+When Git detects a merge conflict, it will mark the conflicting code in hello2.html like this:
 
 ```bash
 <<<<<<< HEAD
@@ -83,7 +83,7 @@ When Git detects a merge conflict, it will mark the conflicting code in index.ht
 
 To resolve the conflict:
 
-Open index.html and manually edit the file
+Open hello2.html and manually edit the file
 Keep the correct version and remove the Git conflict markers (<<<<<<<, =======, >>>>>>>)
 Save the file
 Mark the conflict as resolved by running:
